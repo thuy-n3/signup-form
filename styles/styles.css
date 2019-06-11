@@ -1,31 +1,74 @@
 body {
-  background-image: url("../images/bg-intro-desktop.png"); }
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins'; }
+  body h1 {
+    font-weight: 700; }
+  body p {
+    font-weight: 500; }
+  body .fine {
+    font-weight: 400; }
+  body .bold {
+    font-weight: 600; }
+  body .container {
+    background-image: url("../images/bg-intro-desktop.png");
+    position: relative;
+    background-size: cover; }
+    body .container .overlay {
+      background: #ff7a7a;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      position: absolute; }
 
-form {
-  display: grid;
-  grid-template-columns: 50px 1fr;
-  grid-gap: 12px; }
-  form input, form button {
-    grid-column: 1/3;
-    padding: 10px; }
-  form .submitBtn {
-    background-color: green;
-    padding: 10px;
-    color: white;
-    text-transform: uppercase; }
+.formContainer {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #b9b6d3;
+  border-radius: 10px;
+  box-shadow: 1px 12px 5px;
+  color: #b9b6d3;
+  margin-top: 28px; }
+  .formContainer form {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-gap: 12px; }
+    .formContainer form input, .formContainer form button {
+      grid-column: 1/3;
+      padding: 15px;
+      font-weight: 600; }
+    .formContainer form .firstName {
+      border-radius: 5px; }
+    .formContainer form .submitBtn {
+      background-color: #38cc8c;
+      padding: 15px;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 8px; }
 
 .trialbox {
-  border: solid 2px purple;
-  background-color: purple;
+  border: solid 2px #6055a5;
+  background-color: #6055a5;
   padding: 10px;
   text-align: center;
-  color: white; }
+  color: white;
+  border-radius: 12px;
+  box-shadow: 1px 12px 5px #b9b6d3; }
 
 .termsConditions {
-  text-align: center; }
+  text-align: center;
+  color: #b9b6d3;
+  font-size: 12px; }
+  .termsConditions a.termsLink {
+    text-decoration: none;
+    color: #ff7a7a; }
 
 .textBox {
-  padding: 100px; }
+  margin: 20px; }
+  .textBox h1 {
+    font-size: 50px;
+    line-height: 65px; }
 
 .container {
   display: flex;
@@ -36,6 +79,8 @@ form {
   .container .left {
     flex: 50%; }
   .container .right {
-    flex: 50%; }
+    flex: 50%;
+    margin-right: 20px;
+    padding-right: 20px; }
 
 /*# sourceMappingURL=styles.css.map */
